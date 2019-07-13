@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+
+  pwn:
+    build: .
+    image: glzjin/qwb2019_stkof
+    restart: always
+    ports:
+      - "0.0.0.0:10000:10000"
+    environment:
+      - FLAG=flag{glzjin_wants_a_girl_firend}
